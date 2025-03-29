@@ -86,7 +86,7 @@ namespace Practica_1
 			Console.WriteLine("cantidad de elementos: "+c.cuantos());
 			Console.WriteLine("el minimo es: "+c.minimo());
 			Console.WriteLine("el maximo es: "+c.maximo());
-			Console.WriteLine("ingrese un numero a buscar en la coleccion: ");
+			Console.WriteLine("ingrese un legajo a buscar en la coleccion: ");
 			int ingresado = int.Parse(Console.ReadLine());
 			Alumno newAlumno = new Alumno("",0,ingresado,0);
 			if(c.contiene(newAlumno))
@@ -105,8 +105,8 @@ namespace Practica_1
 			for(int i = 0; i<20; i++)
 			{
 				string nombre = nombres[random.Next(nombres.Length)];
-				int dni = random.Next(10,50);
-				int legajo = random.Next(1,10);
+				int dni = random.Next(1000,5000);
+				int legajo = random.Next(1,1000);
 				double promedio = ((int)(random.NextDouble() * 100));
 				c.agregar(new Alumno(nombre,dni,legajo,promedio));
 			}
