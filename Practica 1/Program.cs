@@ -107,7 +107,7 @@ namespace Practica_1
 				string nombre = nombres[random.Next(nombres.Length)];
 				int dni = random.Next(1000,5000);
 				int legajo = random.Next(1,1000);
-				double promedio = ((int)(random.NextDouble() * 100));
+				double promedio = ((int)(random.NextDouble() * 10));
 				c.agregar(new Alumno(nombre,dni,legajo,promedio));
 			}
 		}
